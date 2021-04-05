@@ -17,8 +17,18 @@ hashMap.get(key);
 hashMap.getOrDefault(key,defaultvalue);
 //Combined with put
 hashMap.put(key,hashMap.getOrDefault(key,0)+1);
+//Check if exists key
+hashMap.containsKey();
+//Check if exists value
+hashMap.containsValue();
+//Check if it's empty
+hashMap.isEmpty();
 ```
-
+## Remove and Replace pair
+```java
+hashMap.remove(key);
+hashMap.replace(key,newValue);
+```
 ## Iteration
 ```java
 //key value iterate1
