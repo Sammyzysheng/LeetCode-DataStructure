@@ -28,7 +28,7 @@ for (Map.Entry<keytype, valuetype> entry : hashMap.entrySet()){};
 entry.getKey();
 entry.getValue();
 //keys values
-hashMap.getKeys();
+hashMap.keySet();
 hashMap.values();
 
 ```
