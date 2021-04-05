@@ -31,6 +31,8 @@ hashMap.replace(key,newValue);
 ```
 ## Iteration
 ```java
+//Size
+hashMap.size();
 //key value iterate1
 hashMap.forEach((k,v)->{});
 //key value iterate2
