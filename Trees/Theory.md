@@ -7,3 +7,7 @@
 ### Level of a node: number of edges from root to the node;
 ### Root :Every tree has one and only one root, highest level of tree, no parent node;
 ### leaf:last level of tree, has no child node;
+
+## Binary Tree
+### A binary tree is complete if every level except for last level has two children and at last level children to the left
+### Full binary tree every level has to have two children
