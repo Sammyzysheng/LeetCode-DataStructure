@@ -1,8 +1,8 @@
-string to int if int
+string to int if int\
 `Java
 Integer.parseInt(string)
 `
-If a is equal to b
+If a is equal to b\
 `Java
 a.equals(b)
 `
