@@ -40,9 +40,18 @@ s.charAt(i);
 ```
 ## Algorithm
 ### delete a node 
+**Needs to know last node of insertion point**\
 set last node of the node's next node to the node's next node
 ```Java
 ListNode nodeToDel,LastNode;
 LastNode.next =  nodeToDel.next;
 ```
-###
+### Insert a node
+**Needs to know last node of insertion point**\
+update node to insert's next to second node in insertion position first, then update first node of insertion position's next to insertion node
+```Java
+ListNode nodeToInst,LastNode;
+nodeToInst.next =  LastNode.next;
+LastNode.next = nodeToInst;
+
+```
