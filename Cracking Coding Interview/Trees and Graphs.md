@@ -1,7 +1,6 @@
 #### Detemine if two vertice in graph has a route
 
-``JAVA
-//breath-first search
+```Java
 bool hasRoute(Node from, Node to, Graph g)
 {
 	if(from == to) return true;
