@@ -1,4 +1,5 @@
 #### Detemine if two vertice in graph has a route
+
 ``JAVA
 //breath-first search
 bool hasRoute(Node from, Node to, Graph g)
@@ -19,7 +20,7 @@ bool hasRoute(Node from, Node to, Graph g)
 		for(Node node : visting.getAdjacent()){
 			
 			if(!visited.get(node)){
-if(visiting == to) return true;
+				if(visiting == to) return true;
 				visited.put(node,true);
 				q.enqueue(node);
 			}
@@ -31,7 +32,6 @@ if(visiting == to) return true;
 	
 }
 //depth-first search
-
 
 bool hasRoute(Node from, Node to, Graph g){
 	if(from == to) return true;
