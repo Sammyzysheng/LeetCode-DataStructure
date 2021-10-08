@@ -61,3 +61,28 @@ ArrayList<LinkedList<TreeNode>> createLveelLinkedList(TreeNode root){
                      
   }
  ```
+### Breath-First Search
+```JAVA
+//create a list at each level to store all the treenodes
+//stop when there is no treenode in the next level
+ArrayList<LinkedList<TreeNode>> createDepthListsForBT(TreeNode root){
+	ArrayList<LinkedList<TreeNode>> Al = new ArrayList<LinkedList<TreeNode>>();
+	LinkedList<TreeNode> current = new LinkedList<TreeNode>();
+	if(root!=null)current.add(root);
+	while(current.size()!=0){
+		Al.add(current);
+		LinkedList<TreeNode> previousLevel = current;
+		current = new LinkedList<TreeNode>();
+		for(TreeNode node in previousLevel){
+			if(node.left!=null){
+				current.add(node.left);
+			}
+			if(node.right!=null){
+				current.add(node.right);
+			}
+		}
+	
+	}
+	return Al;
+}
+```
