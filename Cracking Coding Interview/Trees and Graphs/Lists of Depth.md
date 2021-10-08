@@ -37,7 +37,7 @@ void ListFromBinaryTree(Node root)
 ```
 wrong data structure choose: should choose linkedlist<treenode> and arraylist to store linkedlists\
 Extra space used for queue : don't have to use queue\
-Extra space used to store size of each level: can use size of linkedlist instead\
+Extra space used to store size of each level: can use size of linkedlist instead
 
 #### Optimal Solution using Depth-First Search
 Passing level as a parameter along with TreeNode, create a list at each level\
