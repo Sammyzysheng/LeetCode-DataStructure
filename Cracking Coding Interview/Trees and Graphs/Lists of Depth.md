@@ -1,4 +1,4 @@
-#### Orginal solution using queue
+### Orginal solution using queue
 ```JAVA
 //a queue that stores nodes
 //a int that record number of nodes at each level
@@ -39,7 +39,7 @@ wrong data structure choose: should choose linkedlist<treenode> and arraylist to
 Extra space used for queue : don't have to use queue\
 Extra space used to store size of each level: can use size of linkedlist instead
 
-#### Optimal Solution using Depth-First Search
+### Optimal Solution using Depth-First Search
 Passing level as a parameter along with TreeNode, create a list at each level\
 Add Treenode to list if exists, else ceate new list and add treenode to list\
 ```JAVA
