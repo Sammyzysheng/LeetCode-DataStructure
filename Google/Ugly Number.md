@@ -70,3 +70,43 @@ return base.intValue();
 }
 }
 ```
+### Three pointers
+
+```JAVA
+class Solution {
+    public int nthUglyNumber(int n) {
+/sequence contains original sequence multiply 2, 3, 5
+        //order the sequence by result of multipty from 3 lists
+  
+            
+        
+        int[] ugly = new int[n];
+        int index2 = 0;
+        int index3 = 0;
+        int index5 = 0;
+        int factor2 = 2;
+        int factor3 = 3;
+        int factor5 = 5;
+        
+        ugly[0] = 1;
+        for(int i = 1; i < n; i++){
+            
+            int min = Math.min(Math.min(factor2,factor3),factor5);
+            ugly[i] = min;
+            if(factor2 == min){
+                factor2 = ugly[++index2]*2;
+            }
+            if(factor3 == min){
+                factor3 = ugly[++index3]*3;
+                
+            }
+            if(factor5 == min){
+                factor5 = ugly[++index5]*5;
+                
+            }
+}
+        return ugly[n-1];
+
+}
+}   
+```
