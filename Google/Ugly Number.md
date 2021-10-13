@@ -71,7 +71,7 @@ return base.intValue();
 }
 ```
 ### Three pointers
-
+#### Remeber to check duplicate numbers added
 ```JAVA
 class Solution {
     public int nthUglyNumber(int n) {
