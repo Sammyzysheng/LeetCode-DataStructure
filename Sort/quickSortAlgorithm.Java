@@ -1,3 +1,47 @@
+public int[] sortArray(int[] nums) {
+        quickSort(nums,0,nums.length-1);
+	    return nums;
+    }
+     public void quickSort(int[] nums, int start, int end){
+         if(start>=end)return;
+         int pivot = partition(nums,start,end);
+         if(start<pivot-1) quickSort(nums,start,pivot-1);
+         if(pivot<end)quickSort(nums,pivot,end);
+     }
+
+    public int partition(int[] nums, int start, int end){
+        
+        int pivot = (start+end)/2;
+        int pivotValue = nums[pivot];
+        int i = start; 
+        int j = end;
+        while(i<=j){
+            while(nums[i]<pivotValue)i++;
+            while(nums[j]>pivotValue)j--;
+            if(i<=j){
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                //System.out.println("swap:"+nums[j]+","+nums[i]);
+                i++;
+                j--; 
+                
+            }
+                     
+        }
+        // print(nums);
+        //System.out.println(i);
+        return i;
+
+
+    }
+    public void print(int[] nums){
+        for(int i = 0; i < nums.length; i++){
+            System.out.println(nums[i]);
+        }
+    }
+
+
 
 public class quickSortAlgorithm {
 
